@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Random GPT Acronym</title>
+    <title></title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -30,7 +30,7 @@
 <body>
     <div>
         <p id="acronym"></p>
-        <a href="mailto:legal@sosuemegpt.com">Contact Us</a>
+        <a href="mailto:legal@mydomain.com">Contact Us</a>
     </div>
     <script>
         const acronyms = [
@@ -49,7 +49,9 @@
 
         function generateRandomAcronym() {
             const randomIndex = Math.floor(Math.random() * acronyms.length);
-            document.getElementById("acronym").innerText = acronyms[randomIndex];
+            const randomAcronym = acronyms[randomIndex];
+            document.getElementById("acronym").innerText = randomAcronym;
+            document.title = randomAcronym;
         }
 
         window.addEventListener('load', generateRandomAcronym);
